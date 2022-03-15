@@ -22,7 +22,7 @@ class FoodListView extends StatelessWidget {
         children: 
           category.map((e) => ListView.separated(
             itemBuilder: (context,index)=>GestureDetector(onTap: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>DetailsPage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (ctx)=>DetailsPage(food: restaurant.menu[category[selectedIndex]]![index])));
             },child: FoodItem(food: restaurant.menu[category[selectedIndex]]![index])),
              separatorBuilder: (_,index)=>SizedBox(height: 15,), 
              itemCount: restaurant.menu[category[selectedIndex]]!.length)).toList()
