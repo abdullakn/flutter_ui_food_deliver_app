@@ -22,6 +22,7 @@ class DetailsPage extends StatelessWidget {
         ),
       ) ),
       floatingActionButton: Container(
+     
         width: 100,
         height: 56,
         child: RawMaterialButton(
@@ -33,7 +34,15 @@ class DetailsPage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Icon(Icons.shopping_bag_outlined,color: Colors.black,size: 30,)
+              Icon(Icons.shopping_bag_outlined,color: Colors.black,size: 30,),
+              Container(
+                padding: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle
+                ),
+                child: Text(food.quantity.toString(),style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18,color: Colors.black),),
+              )
 
             ],
           ),
