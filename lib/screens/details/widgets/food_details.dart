@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/models/food.dart';
+import 'package:food_delivery_app/screens/details/widgets/food_quantity.dart';
 
 class FoodDetails extends StatelessWidget {
   final Food food;
@@ -29,7 +30,14 @@ class FoodDetails extends StatelessWidget {
               _buildIconText(
                   Icons.local_fire_department_outlined, Colors.red, food.cal),
             ],
-          )
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          FoodQuantity(food: food),
+          SizedBox(
+            height: 30,
+          ),
         ],
       ),
     );
