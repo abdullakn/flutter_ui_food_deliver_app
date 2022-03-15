@@ -37,7 +37,11 @@ class Food {
           quantity: 1,
           ingredients: [{
             'noodles':"assets/images/ingre1.png",
-            'shrimp':"assets/images/ingre2.png"
+            'shrimp':"assets/images/ingre2.png",
+            'noodle':"assets/images/ingre1.png",
+            'shrim':"assets/images/ingre2.png",
+            'nodles':"assets/images/ingre1.png",
+            'shimp':"assets/images/ingre2.png"
           }],
           about: "Simply and health dish",
           highlights: true),

@@ -21,6 +21,26 @@ class DetailsPage extends StatelessWidget {
           ],
         ),
       ) ),
-    );
+      floatingActionButton: Container(
+        width: 100,
+        height: 56,
+        child: RawMaterialButton(
+          fillColor: Colors.yellow,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50)
+          ),
+          elevation: 0,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Icon(Icons.shopping_bag_outlined,color: Colors.black,size: 30,)
+
+            ],
+          ),
+          onPressed: (){},
+        )),
+
+      );
+    
   }
 }
