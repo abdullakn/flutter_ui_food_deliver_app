@@ -39,7 +39,9 @@ class Food {
             'noodles':"assets/images/ingre1.png",
             'shrimp':"assets/images/ingre2.png"
           }],
-          about: "Simply and health dish"),
+          about: "Simply and health dish",
+          highlights: true),
+          
            Food(
           imgurl: "assets/images/dish1.png",
           desc: "No.1 food",
@@ -55,6 +57,20 @@ class Food {
           }],
           about: "Simply and health dish"),
            Food(
+          imgurl: "assets/images/dish2.png",
+          desc: "No.1 food",
+          name: "Alfham",
+          waitTime: "15",
+          score: 4.7,
+          cal: '325 cal',
+          price: 12,
+          quantity: 1,
+          ingredients: [{
+            'noodles':"assets/images/ingre1.png",
+            'shrimp':"assets/images/ingre2.png"
+          }],
+          about: "Simply and health dish"),
+            Food(
           imgurl: "assets/images/dish2.png",
           desc: "No.1 food",
           name: "Alfham",
